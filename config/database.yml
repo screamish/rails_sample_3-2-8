@@ -8,6 +8,8 @@ development:
   encoding: unicode
   database: sa_dev
   pool: 5
+  username: simon
+  password:
   timeout: 5000
 
 # Warning: The database defined as "test" will be erased and
@@ -18,6 +20,8 @@ test:
   encoding: unicode
   database: sa_test
   pool: 5
+  username: simon
+  password:
   timeout: 5000
 
 production:
