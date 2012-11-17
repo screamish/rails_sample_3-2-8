@@ -4,6 +4,7 @@ gem 'rails', '3.2.8'
 gem 'bootstrap-sass', '2.0.4'
 gem 'bcrypt-ruby', '3.0.1'
 gem 'pg', '0.12.2'
+gem 'jquery-rails', '2.0.2'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -15,10 +16,6 @@ group :development, :test do
   gem 'spork', '0.9.2'
 end
 
-group :development do
-  gem 'annotate', '2.5.0'
-end
-
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
@@ -27,13 +24,18 @@ group :assets do
   gem 'uglifier', '1.2.3'
 end
 
-gem 'jquery-rails', '2.0.2'
+group :development do
+  gem 'annotate', '2.5.0'
+end
+
 
 group :test do
   gem 'capybara', '1.1.2'
   gem 'rb-fsevent', '0.9.1', :require => false
   gem 'growl', '1.0.3'
   gem 'factory_girl_rails', '4.1.0'
+  gem 'cucumber-rails', '1.2.1', :require => false
+  gem 'database_cleaner', '0.7.0'
 end
 
 group :production do
